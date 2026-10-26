@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>Internet Cafe</h1>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="team.html">About Team</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <button type="button" class="btn header-subscribe" data-open-subscription>Subscribe</button>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Our Services</h2>
+            <ol>
+                <li>Standard</li>
+                <li>Pro Gaming Stations</li>
+                <li>Private Tournament Rooms</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>Pricing Tiers</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Zone Type</th>
+                        <th>Hardware Specs</th>
+                        <th>Hourly Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard Zone</td>
+                        <td>Core i5 / RTX 3060 / 16GB RAM</td>
+                        <td>$3.00 / hr</td>
+                    </tr>
+                    <tr>
+                        <td>VIP Gaming Zone</td>
+                        <td>Core i9 / RTX 4080 / 32GB RAM</td>
+                        <td>$6.00 / hr</td>
+                    </tr>
+                    <tr>
+                        <td>Pro Tournament Zone</td>
+                        <td>Core i9 / RTX 4090 / 64GB RAM</td>
+                        <td>$10.00 / hr</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <div class="modal-backdrop" id="subscription-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <button type="button" class="close-modal" id="close-modal" aria-label="Close subscription form">&times;</button>
+        <h2 id="modal-title">Join our cafe updates</h2>
+        <p>Get news about gaming events, tournaments and special offers.</p>
+        <p class="popup-more-info">For more information, click <a href="https://youtu.be/dQw4w9WgXcQ?si=LxP4lefhj2hTHnbE" target="_blank" rel="noopener noreferrer">Here</a>.</p>
+        <form id="subscription-form">
+          <label for="subscription-email">Email address</label>
+          <input id="subscription-email" name="subscription-email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="btn" type="submit">Subscribe</button>
+          <p id="subscription-feedback" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+        <p>Created by: Eraly</p>
+        <p>Current date and time: <span class="footer-date-time" aria-live="off">Loading…</span></p>
+    </footer>
+
+</body>
+</html>
